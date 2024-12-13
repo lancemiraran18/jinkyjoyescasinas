@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Lance Miraran</title>
+    <title>Portfolio - Jinky Joy Escasinas</title>
     <!-- Font Awesome CDN for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
@@ -88,6 +88,7 @@
         .hero .content {
             flex: 1;
             margin-right: 20px;
+            text-align: left;
         }
 
         .hero h1 {
@@ -104,11 +105,13 @@
 
         .hero .buttons a {
             margin-right: 10px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #b087f5; /* Lavender button */
             color: #fff;
             border-radius: 5px;
             transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            font-size: 1rem;
+            display: inline-block;
         }
 
         .hero .buttons a:hover {
@@ -120,6 +123,7 @@
         .hero img {
             max-width: 300px;
             border-radius: 10px;
+            margin-top: 20px;
         }
 
         /* About Section */
@@ -214,7 +218,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .hero {
                 flex-direction: column;
                 text-align: center;
@@ -231,16 +235,22 @@
 
             nav ul {
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
             nav ul li {
                 margin: 5px 10px;
             }
+
+            .hero .buttons a {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .hero p {
@@ -257,6 +267,38 @@
             .activities p,
             .contact p {
                 font-size: 0.9rem;
+            }
+
+            .hero .buttons a {
+                font-size: 0.8rem;
+                padding: 8px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .about h2,
+            .activities h2,
+            .contact h2 {
+                font-size: 1.6rem;
+            }
+
+            .about p,
+            .activities p,
+            .contact p {
+                font-size: 0.8rem;
+            }
+
+            .hero .buttons a {
+                font-size: 0.7rem;
+                padding: 8px 15px;
             }
         }
     </style>
@@ -281,7 +323,7 @@
                 <a href="#activities"><i class="fas fa-eye"></i> See Activities</a>
             </div>
         </div>
-        <img src="jinkyphoto.jpeg" alt="Lance Miraran">
+        <img src="jinkyphoto.jpeg" alt="Jinky Joy Escasinas">
     </section>
     
     <section class="about" id="about">
